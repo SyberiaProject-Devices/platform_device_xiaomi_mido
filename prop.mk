@@ -228,3 +228,9 @@ dalvik.vm.image-dex2oat-filter=speed
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.qti.inputopts.enable=true \
 persist.vendor.qti.inputopts.movetouchslop=0.6
+
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
