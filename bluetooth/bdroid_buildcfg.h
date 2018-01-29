@@ -50,4 +50,7 @@ static inline const char* BtmGetDefaultName()
 
 #define BTM_WBS_INCLUDED TRUE
 #define BTIF_HF_WBS_PREFERRED TRUE
+
+/* Enable HFP WBS feature */
+#define BTIF_HF_CLIENT_WBS_INCLUDED TRUE
 #endif
