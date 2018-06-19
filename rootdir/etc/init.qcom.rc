@@ -64,6 +64,12 @@ on init
     chmod 0664 /dev/blkio/bg/tasks
     write /dev/blkio/blkio.weight 1000
     write /dev/blkio/bg/blkio.weight 100
+	
+on fs
+    mount_all /system/vendor/etc/fstab.qcom --early
+
+    # Start HW service manager early
+    start hwservicemanager
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
@@ -228,6 +234,16 @@ on boot
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 	
 on late-fs
+    # Start services for bootanim
+    start servicemanager
+    start surfaceflinger
+    start bootanim
+    start configstore-hal-1-0
+    start gralloc-2-0
+	
+     # mount RW partitions which need run fsck
+    mount_all /system/vendor/etc/fstab.qcom --late
+	
     # boot time fs tune
 	write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
