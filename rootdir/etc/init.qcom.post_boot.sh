@@ -38,17 +38,19 @@ function 8953_sched_dcvs_eas()
 
     # Enable input boost configuration
     echo "0:1036800" > /sys/module/cpu_boost/parameters/input_boost_freq
-    echo 1 > /sys/module/cpu_boost/parameters/dynamic_stune_boost
-    echo 100 > /sys/module/cpu_boost/parameters/input_boost_ms
+    echo 0 > /sys/module/cpu_boost/parameters/dynamic_stune_boost
+    echo 20 > /sys/module/cpu_boost/parameters/input_boost_ms
 
     # set default schedTune value for foreground/top-app (only affects EAS)
+    echo 10 > /dev/stune/schedtune.sched_boost
     echo 1 > /dev/stune/foreground/schedtune.prefer_idle
     echo 1 > /dev/stune/top-app/schedtune.prefer_idle
     echo 0 > /dev/stune/top-app/schedtune.boost
     echo 0 > /dev/stune/top-app/schedtune.sched_boost
     echo 1 > /dev/stune/top-app/schedtune.dynamic_boost
     echo 1 > /dev/stune/rt/schedtune.prefer_idle
-    echo 0 > /dev/stune/rt/schedtune.boost 
+    echo 0 > /dev/stune/rt/schedtune.boost
+    echo 30 > /dev/stune/rt/schedtune.sched_boost
 }
 
 function 8917_sched_dcvs_eas()
