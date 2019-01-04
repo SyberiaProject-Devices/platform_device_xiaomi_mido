@@ -211,9 +211,6 @@ PRODUCT_SHIPPING_API_LEVEL := 23
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
-# IPA
-USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
-
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-01-05
 
@@ -255,3 +252,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
+
