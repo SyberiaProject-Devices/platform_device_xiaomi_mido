@@ -529,4 +529,5 @@
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
+    <bool name="config_oldQtiTelephony">false</bool>
 </resources>
