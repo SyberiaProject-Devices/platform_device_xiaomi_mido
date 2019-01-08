@@ -21,15 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common LiquidRemix stuff.
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/syberia/common.mk)
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := liquid_mido
+PRODUCT_NAME := syberia_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
@@ -43,8 +43,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Sayan Sarkar (TheHungarianHorntail)"
-
-export LIQUID_BUILDTYPE=RELEASE
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-keys"
