@@ -33,6 +33,17 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+#Syberia
+PRODUCT_GENERIC_PROPERTIES += \
+	ro.sf.lcd_density=420 \
+
+# HWUI and Dalvik VM overrides
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+
+# OTA Updates
+PRODUCT_PACKAGES += \
+	Updates
+
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
