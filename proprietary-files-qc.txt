@@ -243,12 +243,6 @@ vendor/lib/libllvm-qcom.so|7f089c8d2088492e6f6a52368bb030315c71df97
 vendor/lib/libmm-hdcpmgr.so|dc85ffe4147bb390127c3e7a8f972ef6135b31ed
 vendor/lib/librs_adreno.so|12b4c0d4174c108e27a4e09fe3e2b5ac860693a2
 vendor/lib/librs_adreno_sha1.so|065a538f25d41713501c568a2d7ef1561c8e3bb7
-vendor/lib/libscalar.so|cad128a6e71195b4ad38494bc0382bf80e1fb0b2
-vendor/lib/libsdm-color.so|9144f6d1e254fc6353fb91386eb1d0ee1964d8a2
-vendor/lib/libsdm-diag.so|e2e3a0fba39190c58bafa0568e8cd51b391b71b6
--vendor/lib/libsdm-disp-vndapis.so|55e2d71cb097a2af3310b112e086e919bd81656f
-vendor/lib/libsdmextension.so|6c7e1a318e47c1b009ea1a9c61bdbfdc68cd10c4
-vendor/lib/libtinyxml2_1.so|3882fddae942997be6ad6af789cf209fa45e61b3
 vendor/lib64/egl/eglSubDriverAndroid.so|1722e81010c6f9836d83f6d684b206412c410d49
 vendor/lib64/egl/libEGL_adreno.so|b7ab1dad439779da82ab66439e3c8e85a153056d
 vendor/lib64/egl/libGLESv1_CM_adreno.so|1eaa98e7feb9daba88f68ff167e2dacfaeed5e21
@@ -268,12 +262,6 @@ vendor/lib64/libllvm-qcom.so|12cc1b6c00622c88156f2054a90c37733d77a7a6
 vendor/lib64/libmm-hdcpmgr.so|151cd14d6408bbfbd9e74a83a2e2668d9d832b3c
 vendor/lib64/librs_adreno.so|5b853ae3692fc3d8cf7c5b63d45320533c194cde
 vendor/lib64/librs_adreno_sha1.so|35c26aecafd9a12d84ff6f89b1891699c19eb88f
-vendor/lib64/libscalar.so|61c059ca3b9da6a36bdf112e8fbe26a252ad1234
-vendor/lib64/libsdm-color.so|bca0a2a58c2c33e1dbed82de7446ebfcbc8250ff
-vendor/lib64/libsdm-diag.so|87a4f764e894f16246c9a0d6e3f5885df76b750b
--vendor/lib64/libsdm-disp-vndapis.so|fde2de5a3f031577edc39b49036435ef2607b134
-vendor/lib64/libsdmextension.so|040bca52cc5e1a12914ebbcac39be1d36b98adca
-vendor/lib64/libtinyxml2_1.so|b225b16e689e7e4c26fc6144637f6b0c416063f8
 
 # Graphics (HDR) - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
 vendor/lib/libhdr_tm.so|8060a5d9ed0283c7b89716165ba8af4b86ef0210
@@ -301,6 +289,20 @@ vendor/lib64/libdisp-aba.so|2b9a85de013e956f1adfaf00146a865efb7077c4
 vendor/lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f25
 vendor/lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
+
+# Graphics (SDM) - from LA.UM.7.5.r1-03700-8x96.0
+vendor/lib/libscalar.so|cad128a6e71195b4ad38494bc0382bf80e1fb0b2
+vendor/lib/libsdm-color.so|b13ab5f965f5bb8f40207879415cb1adbb55da42
+vendor/lib/libsdm-diag.so|e2e3a0fba39190c58bafa0568e8cd51b391b71b6
+-vendor/lib/libsdm-disp-vndapis.so|6c4233ea3676643bc9658c25cfad7edd45c49362
+vendor/lib/libsdmextension.so|a8659e7e0df5f1e20266ede1331da0660e0fe260
+vendor/lib/libtinyxml2_1.so|3882fddae942997be6ad6af789cf209fa45e61b3
+vendor/lib64/libscalar.so|490cc7447863b3279771ad99e92a5625525db055
+vendor/lib64/libsdm-color.so|9bb3f5147c277eae08c7f918e7de3bd2fccf1f74
+vendor/lib64/libsdm-diag.so|7ab5d2a980029ac9bd20fe68656823b21e483e11
+-vendor/lib64/libsdm-disp-vndapis.so|6ae24866bbd413ed112778650c8fd7a2631cb1a9
+vendor/lib64/libsdmextension.so|e91aaf852df780e42bb083c3089f5b42c87c49f7
+vendor/lib64/libtinyxml2_1.so|b743b93bbb47bb2d80322fcfb985b7b8c696fa1b
 
 # Graphics (Vulkan) - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
 vendor/lib/hw/vulkan.msm8953.so|6259874ee4fe1a414b5e2109ec63af55a70d3733
