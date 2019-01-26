@@ -38,7 +38,7 @@ PRODUCT_GENERIC_PROPERTIES += \
 	ro.sf.lcd_density=420 \
 
 # HWUI and Dalvik VM overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, device/xiaomi/mido/phone-xxhdpi-3072-dalvik-heap.mk)
 
 # OTA Updates
 PRODUCT_PACKAGES += \
