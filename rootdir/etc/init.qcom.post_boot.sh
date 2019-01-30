@@ -36,6 +36,10 @@ function 8953_sched_dcvs_eas()
     echo 20000 > /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us
     echo 0 > /sys/devices/system/cpu/cpufreq/schedutil/iowait_boost_enable
 
+    #CPU HZ
+    echo 652000 >  /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    echo 2016000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+
     # Enable input boost configuration
     echo "0:1036800" > /sys/module/cpu_boost/parameters/input_boost_freq
     echo 0 > /sys/module/cpu_boost/parameters/dynamic_stune_boost
