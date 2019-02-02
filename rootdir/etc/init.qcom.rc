@@ -652,4 +652,4 @@ service goodix_script /vendor/bin/init.goodix.sh
     oneshot
 
 on property:dev.bootcomplete=1
-    #setprop sys.io.scheduler "bfq"
+    setprop sys.io.scheduler "cfq"
