@@ -92,6 +92,7 @@
       "Name": "CPUBWMinFreq",
       "Path": "/sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq",
       "Values": [
+        "7104",
         "3221",
         "2124",
         "769"
@@ -113,7 +114,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "216000000"
+      "Value": "320000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -141,6 +142,18 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "CPUClusterMaxFreq",
+      "Duration": 2000,
+      "Value": "2016000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUClusterMinFreq",
+      "Duration": 2000,
+      "Value": "2016000"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
       "Value": "44"
@@ -162,6 +175,12 @@
       "Node": "CPUBWHistMemory",
       "Duration": 2000,
       "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBWMinFreq",
+      "Duration": 2000,
+      "Value": "7104"
     },
     {
       "PowerHint": "AUDIO_STREAMING",
