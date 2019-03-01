@@ -110,9 +110,16 @@ BOARD_USES_QCNE := true
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Enable dexpreopt to speed boot time
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-WITH_DEXPREOPT := true
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+# Enable dexpreopt to speed boot time
+ifeq ($(HOST_OS),linux)
+      WITH_DEXPREOPT := true
+      WITH_DEXPREOPT_DEBUG_INFO := false
+      USE_DEX2OAT_DEBUG := false
+      DONT_DEXPREOPT_PREBUILTS := true
+      WITH_DEXPREOPT_PIC := true
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+      PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+endif
 
 # Display
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
