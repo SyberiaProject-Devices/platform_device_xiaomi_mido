@@ -13,9 +13,24 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Miscellaneous -->
+    <PreferenceCategory
+        android:title="@string/category_misc"
+        android:key="key_category_misc">
+        <SwitchPreference
+            android:key="key_restore_on_boot"
+            android:title="@string/restore_on_boot"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:key="key_slow_wakeup_fix"
+            android:title="@string/slow_wakeup_fix_title"
+            android:summary="@string/slow_wakeup_fix_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 
     <!-- Dirac -->
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:title="@string/category_sound"
         android:key="key_category_sound">
         <Preference
@@ -23,12 +38,8 @@
             android:persistent="false"
             android:title="@string/dirac_title"
             android:summary="@string/dirac_summary">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="org.lineageos.settings"
-                android:targetClass="org.lineageos.settings.dirac.DiracActivity" />
         </Preference>
-    </PreferenceCategory>-->
+    </PreferenceCategory>
 
     <!-- Vibrator -->
     <PreferenceCategory
@@ -106,18 +117,4 @@
             android:title="@string/scr_cont" />
     </PreferenceCategory>
 
-    <!-- Miscellaneous -->
-    <PreferenceCategory
-        android:title="@string/category_misc"
-        android:key="key_category_misc">
-        <SwitchPreference
-            android:key="key_restore_on_boot"
-            android:title="@string/restore_on_boot"
-            android:defaultValue="false" />
-        <SwitchPreference
-            android:key="key_slow_wakeup_fix"
-            android:title="@string/slow_wakeup_fix_title"
-            android:summary="@string/slow_wakeup_fix_summary"
-            android:defaultValue="false" />
-    </PreferenceCategory>
 </PreferenceScreen>

@@ -24,6 +24,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.thht.settings.device.dirac.AudioEnhancerService;
 import com.thht.settings.device.helpers.StaticMembers;
 
 
@@ -34,6 +35,7 @@ public class Startup extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
 
+        // start restore service for kcal, vibrator, torch
         Boolean shouldRestore = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(StaticMembers.KEY_RESTORE_ON_BOOT, false);
         final Boolean shouldRestorePreset = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(StaticMembers.KEY_KCAL_PRESETS, false);
         final Boolean shouldFixSlowWakeup = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(StaticMembers.KEY_SLOW_WAKEUP_FIX, false);
@@ -49,5 +51,8 @@ public class Startup extends BroadcastReceiver {
                 }
             }, 0);
         }
+        
+        // Start dirac service
+        context.startService(new Intent(context, AudioEnhancerService.class));
     }
 }

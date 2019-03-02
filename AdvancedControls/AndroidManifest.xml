@@ -15,7 +15,8 @@
         android:icon="@drawable/launcher"
         android:theme="@style/AppTheme"
         android:supportsRtl="true"
-        android:configChanges="orientation|keyboardHidden|screenSize">
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:persistent="true">
         <activity
             android:name="com.thht.settings.device.DeviceSettings"
             android:exported="true"
@@ -39,5 +40,10 @@
             android:enabled="true"
             android:exported="true">
 		</service>
+        <service 
+            android:name="com.thht.settings.device.dirac.AudioEnhancerService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 </manifest>
