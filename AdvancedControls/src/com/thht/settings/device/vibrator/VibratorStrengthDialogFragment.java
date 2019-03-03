@@ -189,7 +189,7 @@ public class VibratorStrengthDialogFragment extends DialogFragment implements Se
         setValue(String.valueOf(value));
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getActivity()).edit();
         editor.putString(mPreferenceKey, String.valueOf(value));
-        editor.commit();
+        editor.apply();
     }
 
     // click action : plus one

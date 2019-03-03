@@ -232,7 +232,7 @@ public class KcalRGBDialogFragment extends DialogFragment implements SeekBar.OnS
         setValue(finalValue);
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getActivity()).edit();
         editor.putString(mPreferenceKey, finalValue);
-        editor.commit();
+        editor.apply();
     }
 
     // click action : plus one
