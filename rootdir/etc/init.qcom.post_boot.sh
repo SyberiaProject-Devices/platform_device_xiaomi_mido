@@ -46,6 +46,11 @@ function 8953_sched_dcvs_eas()
     write /dev/stune/top-app/schedtune.prefer_idle 1
     write /dev/stune/rt/schedtune.boost 0
     write /dev/stune/rt/schedtune.prefer_idle 1
+
+    #Disable core control & enable thermal control
+    echo 0 > /sys/module/msm_thermal/core_control/enabled
+    echo 0 > /sys/module/msm_thermal/vdd_restriction/enabled
+    echo Y > /sys/module/msm_thermal/parameters/enabled
 }
 
 function 8917_sched_dcvs_eas()
@@ -1786,7 +1791,7 @@ case "$target" in
                 echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 
                 # re-enable thermal & BCL core_control now
-                echo 1 > /sys/module/msm_thermal/core_control/enabled
+                #echo 1 > /sys/module/msm_thermal/core_control/enabled
                 for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
