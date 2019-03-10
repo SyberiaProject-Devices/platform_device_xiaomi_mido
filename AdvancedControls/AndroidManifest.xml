@@ -12,7 +12,7 @@
         android:targetSdkVersion="27" />
     <application
         android:label="@string/advanced_settings"
-        android:icon="@drawable/launcher"
+        android:icon="@drawable/ic_launcher_advc"
         android:theme="@style/AppTheme"
         android:supportsRtl="true"
         android:configChanges="orientation|keyboardHidden|screenSize"
