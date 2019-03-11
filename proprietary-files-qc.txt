@@ -225,8 +225,8 @@ vendor/lib64/vendor.qti.gnss@2.0.so|58e69a003eb530cf59bbe204251b9652d28a4b89
 vendor/lib64/vendor.qti.gnss@2.1.so|e7d80a2a46bcda7445d21701ba94983a43ab46af
 
 # Graphics - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
-lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5c7e946cfa654f533d481970da9b3d2e0c181161
-lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|c6681b458123832bb6f4015fd3e24032d5b2eff8
+vendor/lib/libsdm-disp-apis.so|5c7e946cfa654f533d481970da9b3d2e0c181161
+vendor/lib64/libsdm-disp-apis.so|c6681b458123832bb6f4015fd3e24032d5b2eff8
 vendor/lib/egl/eglSubDriverAndroid.so|b647204c479f18531322c75f7adde7263eae4d8d
 vendor/lib/egl/libEGL_adreno.so|a1a13b3cbf164e7073ac5d93079dc98c3ba2a506
 vendor/lib/egl/libGLESv1_CM_adreno.so|0930a64d8889c184de31a085539e1b8b28520a31
