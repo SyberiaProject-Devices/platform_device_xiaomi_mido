@@ -1,0 +1,17 @@
+[
+ {
+   "repository" : "SOVIET-ANDROID/android_kernel_xiaomi_msm8953",
+   "target_path": "kernel/xiaomi/msm8953",
+   "branch"     : "soviet-star"
+ },
+ {
+   "repository" : "LineageOS/android_packages_resources_devicesettings",
+   "target_path": "packages/resources/devicesettings",
+   "branch"     : "lineage-16.0"
+ },
+ {
+   "repository" : "SOVIET-ANDROID/proprietary_vendor_xiaomi",
+   "target_path": "vendor/xiaomi",
+   "branch"     : "9.0"
+ }
+]
