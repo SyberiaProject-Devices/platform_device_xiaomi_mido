@@ -850,46 +850,46 @@ vendor/lib64/vendor.qti.gnss@2.1.so|eb908fd65d8b9d1f9cac629815f7adfb48361d16
 # Graphics - from op3 - PKQ1.181203.001
 vendor/lib/libsdm-disp-apis.so|5c7e946cfa654f533d481970da9b3d2e0c181161
 vendor/lib64/libsdm-disp-apis.so|c6681b458123832bb6f4015fd3e24032d5b2eff8
-vendor/lib/egl/eglSubDriverAndroid.so|8468cd8e90386a102d202a48b0c69045fed4af21
-vendor/lib/egl/libEGL_adreno.so|2d401579d0168e4e5ec214293b6a2c0d7c00e5b0
-vendor/lib/egl/libGLESv1_CM_adreno.so|f2670d6c7ef0f989f161a0e5b9b42b09873d936c
-vendor/lib/egl/libGLESv2_adreno.so|d014df897fc4f87d3d76283a63988c00079fde06
+vendor/lib/egl/eglSubDriverAndroid.so|9c83f30cefab6a3c0958d3f38708adb1be3d0217
+vendor/lib/egl/libEGL_adreno.so|046271460d62ce53aa18dfda391d1f74c0829acc
+vendor/lib/egl/libGLESv1_CM_adreno.so|32e46deb87f655f66a0cee6fd297d933eeeeb855
+vendor/lib/egl/libGLESv2_adreno.so|519a678dd479f7da47e041af1a27eb67260bc0ce
 vendor/lib/egl/libQTapGLES.so|46cd5ac004facb42bd3d6398d29e9bfe7b046de0
-vendor/lib/egl/libq3dtools_adreno.so|9f28306f1e31962eceb478bb7198c63e858ae331
+vendor/lib/egl/libq3dtools_adreno.so|61af3e61f4aa24d5f69f52db4c2381ef428f904b
 vendor/lib/egl/libq3dtools_esx.so|d108d6000e8085b7353747fb98c3e3b0774680fc
-vendor/lib/libC2D2.so|1a555aae15adb00b0cc0b43e14136956c0cd2c87
-vendor/lib/libCB.so|e399060808010433aa32890728ca684871e9bb5c
+vendor/lib/libC2D2.so|993ff57bd23135912171725348ccd05354fbfdd7
+vendor/lib/libCB.so|984edb0424c4ea8681922f310eca7a993957ee28
 vendor/lib/libOpenCL.so|74840ef50111c3232a7fcef79bf78e7fa516a237
-vendor/lib/libRSDriver_adreno.so|c89086f8cd9b9afb7725741e6653bcf7c5efcc75
-vendor/lib/libadreno_utils.so|bdf956793cdbfd7c672de756f66acdf9143d429a
-vendor/lib/libbccQTI.so|2876950b59585cf4ed60141c87b5f42bc84184aa
-vendor/lib/libc2d30_bltlib.so|55f4a13ce639973c9acf6cda4f682b531766b11b
-vendor/lib/libgsl.so|b9e2b05df65e005aa2670f096f15bbb530d4ef24
-vendor/lib/libllvm-glnext.so|6a15b7c723204f816b3c1ded2834c12c287a845b
-vendor/lib/libllvm-qcom.so|a8f924b3b9da2698fdf4bc7ff1fd737a9bdce60d
+vendor/lib/libRSDriver_adreno.so|abf0d2def65407781a49c93fc0472f34d44e3357
+vendor/lib/libadreno_utils.so|230d250f9c3c5ae22e3ebff23e715946029765c0
+vendor/lib/libbccQTI.so|9702512fefa690f7ca77eb123d61130dce24114c
+vendor/lib/libc2d30_bltlib.so|267284334c3f3bed268f3896efdefc781395d08c
+vendor/lib/libgsl.so|7a95a4b821298a29017c8f4abc1ba7b9ae067d93
+vendor/lib/libllvm-glnext.so|fb6d4c44e81506d14b0db75d0d81d8339b38604c
+vendor/lib/libllvm-qcom.so|7de288476c8a0eca669ae12602e995fb75079209
 vendor/lib/libmm-hdcpmgr.so|dc85ffe4147bb390127c3e7a8f972ef6135b31ed
-vendor/lib/librs_adreno.so|37722cd580823a183446f50d3d12e820648b67cc
-vendor/lib/librs_adreno_sha1.so|94d4a045a806e63e007fd008319e3cf1b6bb4da2
-vendor/lib64/egl/eglSubDriverAndroid.so|dc9cda8392b4305c46e9b21e38d4bf079ce639b7
-vendor/lib64/egl/libEGL_adreno.so|3c3979826fdfb8633c056fb6db3421b4e21a6f41
-vendor/lib64/egl/libGLESv1_CM_adreno.so|fa838b4a397022b539f95fb6cd4e12fab65a8aae
-vendor/lib64/egl/libGLESv2_adreno.so|f0557442e34f690a988d800c74b6fff7a7b43af7
+vendor/lib/librs_adreno.so|77c1fa369e0434d8456f28b6ddeea07a0012807b
+vendor/lib/librs_adreno_sha1.so|97aae2e687bf72efebd658a5566aacdd069f415f
+vendor/lib64/egl/eglSubDriverAndroid.so|441b43b3e5f109b7e4b2214c4a9766b1be7648e7
+vendor/lib64/egl/libEGL_adreno.so|8c3d350c43b62b558008ed25287568a1683791f6
+vendor/lib64/egl/libGLESv1_CM_adreno.so|68396836feba3dd6cab843230daa01c3065d3a3c
+vendor/lib64/egl/libGLESv2_adreno.so|aada520acf18f1cae5c87209c26b817ae296fcc9
 vendor/lib64/egl/libQTapGLES.so|0f9d9a1b67e574c41af1c62928c2db0783727912
-vendor/lib64/egl/libq3dtools_adreno.so|a7c5f6d3b795572a51d3697a3a97b14a8f1e6e90
-vendor/lib64/egl/libq3dtools_esx.so|f2b0a2a69e9d4fe25935e309e9d7b1843405702d
-vendor/lib64/libC2D2.so|ed4059076daac6819f985746ddf733d07596203c
-vendor/lib64/libCB.so|4b24c0a633508a8797853338567d7d577ea1ffcc
+vendor/lib64/egl/libq3dtools_adreno.so|3f94ca078daf13ad6fef935173c3a1d348cbbb50
+vendor/lib64/egl/libq3dtools_esx.so|82b4df116f11df85497aac12c68f3bde80a75070
+vendor/lib64/libC2D2.so|210d62b347f3e23c29eec437693f330a8a1a8ab2
+vendor/lib64/libCB.so|843eb02fa377f9aed16b2d1b9234072c93cf12c7
 vendor/lib64/libOpenCL.so|59820114c38b67126df7b8459c4524616ca4e9d1
-vendor/lib64/libRSDriver_adreno.so|5ffd4aa3a89ded70475b848609720dfa68514136
-vendor/lib64/libadreno_utils.so|22c8a10873d1659b3aa8431223416dca4ba572cb
-vendor/lib64/libbccQTI.so|bfe2c3f1f184881011628927ec41a2ed1bf8d8f4
-vendor/lib64/libc2d30_bltlib.so|ddc38db624d4aeaa6ce569490815298fef5b4b44
-vendor/lib64/libgsl.so|f62be91c4fbc11fd30aca550e19ae51825abb759
-vendor/lib64/libllvm-glnext.so|d4a73c95f64d12edf1f76f9afecad0a5db5b90d3
-vendor/lib64/libllvm-qcom.so|2cd92fac3d99fcb5e95ea6481f416cd736a6af7d
+vendor/lib64/libRSDriver_adreno.so|4e22e8ca824b47d099681295ee610c3f926ef917
+vendor/lib64/libadreno_utils.so|3532570425d4ff50ceab927d24dc24476f5af8d8
+vendor/lib64/libbccQTI.so|ba9ec1379205d9e4899c032c767fb6e5e012d235
+vendor/lib64/libc2d30_bltlib.so|192205c01f8228d0052302de6757991a3b8b6472
+vendor/lib64/libgsl.so|9509ba266f5d2af17a1215edc9d7af7266800f04
+vendor/lib64/libllvm-glnext.so|4dfc9947da910ee987c614e4e83405f9de77850a
+vendor/lib64/libllvm-qcom.so|8f9061f2e356bfa4e87f12f0bdb78663afdb71e9
 vendor/lib64/libmm-hdcpmgr.so|151cd14d6408bbfbd9e74a83a2e2668d9d832b3c
-vendor/lib64/librs_adreno.so|3669aa82d7684e799eae5b5c4df6a742bba90821
-vendor/lib64/librs_adreno_sha1.so|614c82c5480cad069170c85d523c2dc25a026383
+vendor/lib64/librs_adreno.so|f8eb584482214ed72694cb848c86d857aece88e1
+vendor/lib64/librs_adreno_sha1.so|e0b612b42f07d072b26ca630518f072e83ddd7b2
 
 # Graphics (HDR) - from op3 - PKQ1.181203.001
 vendor/lib/libhdr_tm.so|37381160c5f44f3974af22fb09f394c0fd1fd3bd
@@ -922,8 +922,8 @@ vendor/lib64/libsdmextension.so|d8e738455720e4c1492fcb2f77c030aa8beaa8dd
 vendor/lib64/libtinyxml2_1.so|b743b93bbb47bb2d80322fcfb985b7b8c696fa1b
 
 # Graphics (Vulkan) - from op3 - PKQ1.181203.001
-vendor/lib/hw/vulkan.msm8953.so|55c875334793eb80e0d7177f640df1930dbe46a5
-vendor/lib64/hw/vulkan.msm8953.so|acb63c9b1827f7cbae1ee9946a9c3afde4ec18f7
+vendor/lib/hw/vulkan.msm8953.so|cb71b03698184afedf476227b817105ccafb3aff
+vendor/lib64/hw/vulkan.msm8953.so|156a536638b0f88e9771d06e02a41c2f562b46b2
 
 # Graphics firmware - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
