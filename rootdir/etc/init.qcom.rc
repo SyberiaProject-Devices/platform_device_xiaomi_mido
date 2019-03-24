@@ -231,23 +231,8 @@ on post-fs-data
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
-    # Change lm related dirs
-    mkdir /data/vendor/lm 0700 root root
-
     # Create directory used by media clients
     mkdir /data/vendor/media 0770 mediacodec media
-
-    # create QDMA dropbox
-    mkdir /data/vendor/qdmastats 0700 system system
-    mkdir /data/vendor/qdma 0770 system system
-    mkdir /dev/socket/qdma 0777 system system
-    chmod 2777 /dev/socket/qdma
-
-    # Create /data/vendor/tzstorage directory for SFS listener
-    mkdir /data/vendor/tzstorage 0770 system system
-
-    # Create directory for apps access via QTEEConnector
-    mkdir /data/vendor/qtee 0770 system system
 
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
@@ -272,10 +257,6 @@ on post-fs-data
     #create ipacm log dir
     mkdir /data/vendor/ipa 0770 radio radio
     chmod 0770 /data/vendor/ipa
-
-    #Create QTI dir for logs
-    mkdir /data/vendor/dataqti 0770 radio radio
-    chmod 0770 /data/vendor/dataqti
 
     # Create the directories used by CnE subsystem
     mkdir /data/vendor/connectivity 0771 radio radio
@@ -342,18 +323,6 @@ on post-fs-data
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
 
-    # qti-logkit data
-    mkdir /data/vendor/qti-logkit/ 0771 system system
-    mkdir /data/vendor/qti-logkit/shared-privileged/ 2770 system system
-    mkdir /data/vendor/qti-logkit/shared-public/ 2770 system diag
-    mkdir /data/vendor/qti-logkit/socket-privileged/ 2770 system system
-    mkdir /data/vendor/qti-logkit/socket-public/ 2750 system diag
-    mkdir /data/vendor/qti-logkit/logdata/ 2750 system shell
-
-    #Create SWAP related dirs
-    mkdir /data/vendor/swap 0770 root system
-    chmod 2770 /data/vendor/swap
-
     # set aggressive read ahead for dm-0 and dm-1 during boot up
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
@@ -365,9 +334,6 @@ on post-fs-data
     chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
     chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq
-
-    #Create dir for TUI
-    mkdir /data/vendor/tui 0700 system system
 
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
@@ -393,13 +359,13 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
-service vendor.cnd /system/vendor/bin/cnd
+service vendor.cnd /vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
     writepid /dev/cpuset/system-background/tasks
 
-service dpmQmiMgr /system/vendor/bin/dpmQmiMgr
+service dpmQmiMgr /vendor/bin/dpmQmiMgr
     class main
     user system
     group system
@@ -438,18 +404,11 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
 on property:persist.vendor.radio.atfwd.start=true
     start vendor.atfwd
 
-service vendor.netmgrd /system/vendor/bin/netmgrd
+service vendor.netmgrd /vendor/bin/netmgrd
     class main
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.ipacm-diag /system/vendor/bin/ipacm-diag
-    class main
-    user radio
-    socket ipacm_log_file dgram 660 radio radio
-    group radio diag oem_2901
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.ipacm /system/vendor/bin/ipacm
+service vendor.ipacm /vendor/bin/ipacm
     class main
     user radio
     group radio inet
@@ -493,7 +452,7 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     disabled
     oneshot
 
-service loc_launcher /system/vendor/bin/loc_launcher
+service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
@@ -539,7 +498,7 @@ service charger /sbin/chargeonlymode
     group system graphics
     seclabel u:r:healthd:s0
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
@@ -565,7 +524,7 @@ on property:init.svc.surfaceflinger=restarting
     restart vendor.hwcomposer-2-1
     restart vendor.hwcomposer-2-2
 
-service time_daemon /system/vendor/bin/time_daemon
+service time_daemon /vendor/bin/time_daemon
     class main
     user root
     group root
