@@ -277,15 +277,15 @@ lib/vendor.qti.hardware.qdutils_disp@1.0.so|9ca9c69b923f04e26b1944ddfb60261522c8
 -lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f25
 lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
-vendor/bin/hw/vendor.display.color@1.0-service|2ca340c7fd7689ac8ddf36f948fd95a7cd3bfc2e
+vendor/bin/hw/vendor.display.color@1.0-service|2dbbb46a62ac5cf8d3a084c8350457442f5741eb
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|2536d249be2b723821eae12a505c737e2c6f7681
-vendor/bin/mm-pp-dpps|c89656e2349f6c81fe9a26e7c70e304ea77e1079
+vendor/bin/mm-pp-dpps|c281ee28274eeff6273091ae07aa1856a0c160db
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
 vendor/lib/vendor.display.color@1.0.so|a4da7352135120a3f1dc6c73edecec87bea5c1a5
 vendor/lib/vendor.display.postproc@1.0.so|fb2b2af0f4811769424d68898f5ea323372ba0e5
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|9ca9c69b923f04e26b1944ddfb60261522c87509
-vendor/lib64/libdisp-aba.so|95cafbc303cbf3017c7f10276454ef908b258b1c
+vendor/lib64/libdisp-aba.so|2b9a85de013e956f1adfaf00146a865efb7077c4
 vendor/lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f25
 vendor/lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
@@ -305,8 +305,8 @@ vendor/lib64/libsdmextension.so|e91aaf852df780e42bb083c3089f5b42c87c49f7
 vendor/lib64/libtinyxml2_1.so|b743b93bbb47bb2d80322fcfb985b7b8c696fa1b
 
 # Graphics (Vulkan) - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
-vendor/lib/hw/vulkan.msm8953.so|6259874ee4fe1a414b5e2109ec63af55a70d3733
-vendor/lib64/hw/vulkan.msm8953.so|e1905916771354829868a65e6757615c7de20b71
+vendor/lib/hw/vulkan.msm8953.so|c06133816c003d037b0aaf6102bffc871f805fc9
+vendor/lib64/hw/vulkan.msm8953.so|5636f14b156b5ee2cb986961bd1b2ea002e97f83
 
 # Graphics firmware - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
