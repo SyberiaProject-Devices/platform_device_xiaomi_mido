@@ -166,8 +166,7 @@ const QCamera3HardwareInterface::QCameraMap<
     { ANDROID_CONTROL_SCENE_MODE_SPORTS ,        CAM_SCENE_MODE_SPORTS },
     { ANDROID_CONTROL_SCENE_MODE_PARTY,          CAM_SCENE_MODE_PARTY },
     { ANDROID_CONTROL_SCENE_MODE_CANDLELIGHT,    CAM_SCENE_MODE_CANDLELIGHT },
-    { ANDROID_CONTROL_SCENE_MODE_BARCODE,        CAM_SCENE_MODE_BARCODE},
-    { ANDROID_CONTROL_SCENE_MODE_HDR,            CAM_SCENE_MODE_HDR }
+    { ANDROID_CONTROL_SCENE_MODE_BARCODE,        CAM_SCENE_MODE_BARCODE}
 };
 
 const QCamera3HardwareInterface::QCameraMap<
@@ -1209,7 +1208,7 @@ int32_t QCamera3HardwareInterface::getSensorOutputSize(cam_dimension_t &sensor_d
 void QCamera3HardwareInterface::enablePowerHint()
 {
     if (!mPowerHintEnabled) {
-        m_perfLock.powerHint(POWER_HINT_VIDEO_ENCODE, true);
+        m_perfLock.powerHint(PowerHint::VIDEO_ENCODE, true);
         mPowerHintEnabled = true;
     }
 }
@@ -1227,7 +1226,7 @@ void QCamera3HardwareInterface::enablePowerHint()
 void QCamera3HardwareInterface::disablePowerHint()
 {
     if (mPowerHintEnabled) {
-        m_perfLock.powerHint(POWER_HINT_VIDEO_ENCODE, false);
+        m_perfLock.powerHint(PowerHint::VIDEO_ENCODE, false);
         mPowerHintEnabled = false;
     }
 }
