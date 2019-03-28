@@ -203,7 +203,6 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
