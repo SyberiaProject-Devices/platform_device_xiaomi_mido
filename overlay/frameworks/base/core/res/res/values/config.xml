@@ -479,11 +479,8 @@
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
-
-    <!-- Lawnstep -->
-    <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.ci/com.android.quickstep.RecentsActivity</string>
 	
-	<!-- Component name for default assistant on this device -->
+    <!-- Component name for default assistant on this device -->
     <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
 </resources>
 
