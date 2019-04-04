@@ -19,76 +19,62 @@
 from hashlib import sha1
 import sys
 
-def cleanup(lines):
-    for index, line in enumerate(lines):
-        # Remove '\n' character
-        line = line[:-1]
+device='mido'
+vendor='xiaomi'
 
-        # Skip empty or commented lines
-        if len(line) == 0 or line[0] == '#':
-            continue
+lines = [ line for line in open('proprietary-files.txt', 'r') ]
+vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
+needSHA1 = False
 
-        # Drop SHA1 hash, if existing
-        if '|' in line:
-            line = line.split('|')[0]
-            lines[index] = '%s\n' % (line)
+def cleanup():
+  for index, line in enumerate(lines):
+    # Remove '\n' character
+    line = line[:-1]
 
-def update(lines, device, vendor, vendorPath, needSHA1=False):
-    for index, line in enumerate(lines):
-        # Remove '\n' character
-        line = line[:-1]
+    # Skip empty or commented lines
+    if len(line) == 0 or line[0] == '#':
+      continue
 
-        # Skip empty lines
-        if len(line) == 0:
-            continue
+    # Drop SHA1 hash, if existing
+    if '|' in line:
+      line = line.split('|')[0]
+      lines[index] = '%s\n' % (line)
 
-        # Check if we need to set SHA1 hash for the next files
-        if line[0] == '#':
-            needSHA1 = (' - from' in line)
-            continue
+def update():
+  for index, line in enumerate(lines):
+    # Remove '\n' character
+    line = line[:-1]
 
-        if needSHA1:
-            # Remove existing SHA1 hash
-            line = line.split('|')[0]
-            filePath = line.split(':')[1] if len(line.split(':')) == 2 else line
+    # Skip empty lines
+    if len(line) == 0:
+      continue
 
-            if filePath[0] == '-':
-                file = open('%s/%s' % (vendorPath, filePath[1:]), 'rb').read()
-            else:
-                file = open('%s/%s' % (vendorPath, filePath), 'rb').read()
+    # Check if we need to set SHA1 hash for the next files
+    if line[0] == '#':
+      needSHA1 = (' - from' in line)
+      continue
 
-            hash = sha1(file).hexdigest()
-            lines[index] = '%s|%s\n' % (line, hash)
+    if needSHA1:
+      # Remove existing SHA1 hash
+      line = line.split('|')[0]
+      filePath = line.split(':')[1] if len(line.split(':')) == 2 else line
 
-def gensha1(lines, device, vendor, vendorPath):
-    if len(sys.argv) == 2 and sys.argv[1] == '-c':
-        cleanup(lines)
-    else:
-        update(lines, device, vendor, vendorPath, False)
+      if filePath[0] == '-':
+        file = open('%s/%s' % (vendorPath, filePath[1:]), 'rb').read()
+      else:
+        file = open('%s/%s' % (vendorPath, filePath), 'rb').read()
 
-def writeback(lines, filename):
-    try:
-        with open(filename, 'w') as file:
-            for line in lines:
-                file.write(line);
-    except IOError as err:
-        print(str(err))
+      hash = sha1(file).hexdigest()
+      lines[index] = '%s|%s\n' % (line, hash)
 
-if __name__ == "__main__":
-    filename1 = 'proprietary-files-qc.txt'
-    filename2 = 'proprietary-files.txt'
-    lines1 = [ line for line in open(filename1, 'r') ]
-    lines2 = [ line for line in open(filename2, 'r') ]
+if len(sys.argv) == 2 and sys.argv[1] == '-c':
+  cleanup()
+else:
+  update()
 
-    device='msm8953-common'
-    vendor='xiaomi'
-    vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
-    gensha1(lines1, device, vendor, vendorPath)
+with open('proprietary-files.txt', 'w') as file:
+  for line in lines:
+    file.write(line)
 
-    device='mido'
-    vendor='xiaomi'
-    vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
-    gensha1(lines2, device, vendor, vendorPath)
+  file.close()
 
-    writeback(lines1, filename1)
-    writeback(lines2, filename2)
