@@ -35,22 +35,21 @@ static inline const char* BtmGetDefaultName()
 #undef PROPERTY_VALUE_MAX
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
-
 // Disables read remote device feature
-#define MAX_ACL_CONNECTIONS   16
+#define BTA_SKIP_BLE_READ_REMOTE_FEAT FALSE
+#define MAX_ACL_CONNECTIONS    7
 #define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED   TRUE
-
 // skips conn update at conn completion
+#define BTA_BLE_SKIP_CONN_UPD  FALSE
+#define BLE_PERIPHERAL_ADV_NAME  FALSE
 #define BT_CLEAN_TURN_ON_DISABLED TRUE
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
 
+#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 #define BTM_WBS_INCLUDED TRUE
 #define BTIF_HF_WBS_PREFERRED TRUE
-
-/* Enable HFP WBS feature */
-#define BTIF_HF_CLIENT_WBS_INCLUDED TRUE
 #endif
