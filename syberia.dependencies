@@ -20,7 +20,7 @@
    "branch"     : "9.0-caf-8996"
  },
  {
-   "repository" : "syberia-project/platform_hardware_qcom_display",
+   "repository" : "SOVIET-ANDROID/platform_hardware_qcom_display",
    "target_path": "hardware/qcom/display-caf/msm8996",
    "branch"     : "9.0-caf-8996"
  },
