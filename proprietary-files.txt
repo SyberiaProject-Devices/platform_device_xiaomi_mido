@@ -998,8 +998,8 @@ vendor/lib64/libwms.so|57d9f33071f4ae42ac77c98fb82f4e1fe8ac4754
 vendor/bin/msm_irqbalance|bf933b58332cf94fe4a2072bc3e976a6a82efe3c
 
 # Perf from - from wahoo
-vendor/lib/libqti-perfd-client.so|f277daf9632b4d4c22a27abec2c4d0ccf776892d
-vendor/lib64/libqti-perfd-client.so|eaf678de5d7d0de194a263db1835b1f582452419
+vendor/lib/libqti-perfd-client.so|08c3c3d419f4171ddf3b5809ec89ff8311c0af98
+vendor/lib64/libqti-perfd-client.so|3a2899e8aaa6cc1d853487da3859083d2a7f3801
 
 # Peripheral manager - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
