@@ -1000,7 +1000,6 @@ vendor/bin/msm_irqbalance|bf933b58332cf94fe4a2072bc3e976a6a82efe3c
 # Perf from - from wahoo
 vendor/lib/libqti-perfd-client.so|f277daf9632b4d4c22a27abec2c4d0ccf776892d
 vendor/lib64/libqti-perfd-client.so|eaf678de5d7d0de194a263db1835b1f582452419
-vendor/lib64/libperfmgr.so|c3dd666accc3831b081429f283b767b79025979f
 
 # Peripheral manager - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
