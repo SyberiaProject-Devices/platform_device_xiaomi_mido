@@ -10,10 +10,15 @@
    "branch"     : "lineage-16.0"
  },
  {
+   "repository" : "SOVIET-ANDROID/aarch64-linux-gnu-8.x",
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.x",
+   "branch"     : "master"
+ }, 
+ {
    "repository" : "SOVIET-ANDROID/proprietary_vendor_xiaomi",
    "target_path": "vendor/xiaomi",
    "branch"     : "9.0"
-   },
+ },
  {
    "repository" : "syberia-project/platform_hardware_qcom_audio",
    "target_path": "hardware/qcom/audio-caf/msm8996",
