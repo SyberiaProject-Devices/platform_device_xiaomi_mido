@@ -1,0 +1,3 @@
+allow { appdomain radio untrusted_app_all } system_app_data_file:dir { getattr search };
+
+get_prop({ appdomain bluetooth mediaprovider radio system_server untrusted_app_all },property_type)
