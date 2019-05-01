@@ -214,16 +214,6 @@ on boot
     # Set SQLite flags for F2FS because some DBs might be opened early
     setprop debug.sqlite.journalmode OFF
     setprop debug.sqlite.syncmode OFF
-	
-on late-fs
-    # boot time fs tune
-	write /sys/block/sda/queue/iostats 0
-    write /sys/block/sda/queue/scheduler cfq
-    write /sys/block/sda/queue/iosched/slice_idle 0
-    write /sys/block/sda/queue/read_ahead_kb 2048
-    write /sys/block/sda/queue/nr_requests 256
-    write /sys/block/dm-0/queue/read_ahead_kb 2048
-    write /sys/block/dm-1/queue/read_ahead_kb 2048
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -324,10 +314,6 @@ on post-fs-data
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
 
-    # set aggressive read ahead for dm-0 and dm-1 during boot up
-    write /sys/block/dm-0/queue/read_ahead_kb 2048
-    write /sys/block/dm-1/queue/read_ahead_kb 2048
-
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
     
@@ -337,12 +323,35 @@ on post-fs-data
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 	
-    # end boot time fs tune
-    write /sys/block/sda/queue/read_ahead_kb 128
-    write /sys/block/sda/queue/nr_requests 128
-    write /sys/block/dm-0/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/sda/queue/iostats 1
+    # Disable slice_idle on supported block devices
+    for block in mmcblk0 mmcblk1 dm-0 dm-1 sda; do
+
+        # Post boot IO scheduler tuning
+        write /sys/block/$block//queue/read_ahead_kb 256
+        write /sys/block/$block//queue/nr_requests 256
+        write /sys/block/$block//queue/add_random 0
+        write /sys/block/$block//queue/iostats 0
+        write /sys/block/$block//queue/nomerges 0
+        write /sys/block/$block//queue/rotational 0
+        write /sys/block/$block//queue/rq_affinity 1
+
+
+        # Tweak CFQ IO scheduler for less latency
+        write /sys/block/$block//queue/iosched/quantum 4
+        write /sys/block/$block//queue/iosched/fifo_expire_sync 80
+        write /sys/block/$block//queue/iosched/fifo_expire_async 330
+        write /sys/block/$block//queue/iosched/back_seek_max 12582912
+        write /sys/block/$block//queue/iosched/back_seek_penalty 1
+        write /sys/block/$block//queue/iosched/slice_sync 60
+        write /sys/block/$block//queue/iosched/slice_async 50
+        write /sys/block/$block//queue/iosched/slice_async_rq 2
+        write /sys/block/$block//queue/iosched/group_idle 0
+	
+   done;
+	
+    # FileSystem (FS) optimized tweaks & enhancements for a improved userspace experience
+    write /proc/sys/fs/dir-notify-enable 0
+    write /proc/sys/fs/lease-break-time 20
 	
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
