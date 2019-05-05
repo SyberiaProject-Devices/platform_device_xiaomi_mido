@@ -34,6 +34,17 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
+on late-fs
+    # boot time fs tune
+    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0/queue/nr_requests 256
+    write /sys/block/mmcblk0rpmb/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0rpmb/queue/nr_requests 256
+    write /sys/block/dm-0/queue/read_ahead_kb 2048 
+    write /sys/block/dm-1/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0/queue/iostats 0
+    write /sys/block/mmcblk0rpmb/queue/iostats 0
+	
 on init
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
@@ -323,31 +334,14 @@ on post-fs-data
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 	
-    # Disable slice_idle on supported block devices
-    for block in mmcblk0 mmcblk1 dm-0 dm-1 sda; do
-
-        # Post boot IO scheduler tuning
-        write /sys/block/$block//queue/read_ahead_kb 256
-        write /sys/block/$block//queue/nr_requests 256
-        write /sys/block/$block//queue/add_random 0
-        write /sys/block/$block//queue/iostats 0
-        write /sys/block/$block//queue/nomerges 0
-        write /sys/block/$block//queue/rotational 0
-        write /sys/block/$block//queue/rq_affinity 1
-
-
-        # Tweak CFQ IO scheduler for less latency
-        write /sys/block/$block//queue/iosched/quantum 4
-        write /sys/block/$block//queue/iosched/fifo_expire_sync 80
-        write /sys/block/$block//queue/iosched/fifo_expire_async 330
-        write /sys/block/$block//queue/iosched/back_seek_max 12582912
-        write /sys/block/$block//queue/iosched/back_seek_penalty 1
-        write /sys/block/$block//queue/iosched/slice_sync 60
-        write /sys/block/$block//queue/iosched/slice_async 50
-        write /sys/block/$block//queue/iosched/slice_async_rq 2
-        write /sys/block/$block//queue/iosched/group_idle 0
-	
-   done;
+    # disable boot time fs tuning
+    write /sys/block/mmcblk0/queue/read_ahead_kb 256
+    write /sys/block/mmcblk0/queue/nr_requests 128
+    write /sys/block/mmcblk0rpmb/queue/read_ahead_kb 256
+    write /sys/block/dm-0/queue/read_ahead_kb 256
+    write /sys/block/dm-1/queue/read_ahead_kb 256
+    write /sys/block/mmcblk0/queue/iostats 1
+    write /sys/block/mmcblk0rpmb/queue/iostats 1
 	
     # FileSystem (FS) optimized tweaks & enhancements for a improved userspace experience
     write /proc/sys/fs/dir-notify-enable 0
@@ -546,7 +540,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     oneshot
 
 on property:dev.bootcomplete=1
-    setprop sys.io.scheduler "cfq"
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
