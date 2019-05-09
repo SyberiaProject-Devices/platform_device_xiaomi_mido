@@ -12,3 +12,4 @@ allow init system_server:unix_stream_socket { read write };
 allow init adsprpcd_file:filesystem { mount relabelfrom relabelto };
 allow init sysfs:file setattr;
 allow init sysfs_leds:lnk_file r_file_perms;
+allow init system_file:file execute_no_trans;
