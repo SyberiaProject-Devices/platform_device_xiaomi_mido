@@ -42,10 +42,7 @@ function 8953_sched_dcvs_eas()
 
     # SchedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 0
     write /dev/stune/top-app/schedtune.prefer_idle 1
-    write /dev/stune/rt/schedtune.boost 0
-    write /dev/stune/rt/schedtune.prefer_idle 1
 
     #Disable core control & enable thermal control
     echo 0 > /sys/module/msm_thermal/core_control/enabled
