@@ -47,12 +47,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.bt.enable.splita2dp=false \
 bluetooth.hfp.client=1 \
 vendor.qcom.bluetooth.soc=smd \
-ro.bluetooth.hfp.ver=1.7 \
-ro.vendor.qualcomm.bt.hci_transport=smd
+ro.bluetooth.hfp.ver=1.7
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.vendor.shutdown.waittime=500
+sys.vendor.shutdown.waittime=500
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
