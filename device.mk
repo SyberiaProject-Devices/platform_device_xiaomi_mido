@@ -427,7 +427,3 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# AdvancedControls
-PRODUCT_PACKAGES += \
-    AdvancedControls \
