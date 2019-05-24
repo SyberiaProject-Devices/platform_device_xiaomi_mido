@@ -100,6 +100,7 @@ persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=420 \
+debug.sdm.support_writeback=0 \
 ro.vendor.display.cabl=2 \
 vendor.display.disable_partial_split=1 \
 vendor.display.disable_rotator_downscale=1 \
