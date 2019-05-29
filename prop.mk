@@ -70,10 +70,16 @@ vidc.enc.dcvs.extra-buff-count=2
 
 # Additional props
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.qti.cgroup_follow.enable=true
-persist.vendor.qti.inputopts.enable=true
-persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.vendor.qti.cgroup_follow.enable=true \
+persist.vendor.qti.inputopts.enable=true \
+persist.vendor.qti.inputopts.movetouchslop=0.6 \
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
 
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -223,14 +229,3 @@ persist.sys.wfd.virtual=0
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed
-
-# Touch optimize
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.qti.inputopts.enable=true \
-persist.vendor.qti.inputopts.movetouchslop=0.6
-
-# Higher fling velocities
-# for smoother scrolling and better responsiveness
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.min.fling_velocity=160 \
-ro.max.fling_velocity=20000
