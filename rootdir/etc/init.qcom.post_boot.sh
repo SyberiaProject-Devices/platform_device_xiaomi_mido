@@ -40,10 +40,6 @@ function 8953_sched_dcvs_eas()
     echo 652000 >  /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
     echo 2016000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 
-    # SchedTune value for foreground/top-app
-    write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-
     #Disable core control & enable thermal control
     echo 0 > /sys/module/msm_thermal/core_control/enabled
     echo 0 > /sys/module/msm_thermal/vdd_restriction/enabled
