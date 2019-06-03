@@ -534,3 +534,7 @@ on property:dev.bootcomplete=1
     write /dev/stune/background/blkio.weight 10
     write /dev/stune/top-app/blkio.weight 1000
     write /dev/stune/rt/blkio.weight 1000
+
+    # Restart IRQ balancer after boot complete
+    stop vendor.msm_irqbalance
+    start vendor.msm_irqbalance
