@@ -87,8 +87,8 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "10",
-        "5"
+        "5",
+        "1"
       ],
       "ResetOnInit": true
     },
@@ -164,13 +164,13 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "216000000"
+      "Value": "320000000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "10"
+      "Value": "5"
     },
     {
       "PowerHint": "INTERACTION",
