@@ -165,6 +165,7 @@ vendor.video.disable.ubwc=1
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.sys.fw.bservice_enable=true \
+debug.sf.disable_backpressure=1 \
 ro.sys.fw.dex2oat_thread_count=8 \
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
