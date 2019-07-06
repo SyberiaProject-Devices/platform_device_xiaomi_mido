@@ -1,25 +1,25 @@
 # ADSP - from op3 PKQ1.181203.001 1904252148
-vendor/bin/adsprpcd|ef200e3bce4429fd9461c74330a003f069ffd5b3
-vendor/lib/libadsprpc.so|76cf6bd3975e933f1bec55499da3c3e7a17a9e6d
+vendor/bin/adsprpcd|3d1e7e14dfc2f2468a06e0af9c0d34f4bda28d4b
+vendor/lib/libadsprpc.so|a2ff69f96a9242d4be0fe5cae2475c23294f937a
 vendor/lib/libadsp_default_listener.so|d9de89d55eba2d35a7583584b51335a663705fa7
 vendor/lib/libfastcvadsp_stub.so|6b50fd7d53811b51e06fedd87c12a794d0c2f645
-vendor/lib/libfastcvopt.so|797b9843ccc1f650d66831d645db2bc96b89c299
-vendor/lib/libmdsprpc.so|f56e3c3c9775e16bf4b92779e58b8596c13258ce
-vendor/lib64/libadsprpc.so|bc7504a5c64c73748927404be5ccfe4015146d25
-vendor/lib64/libadsp_default_listener.so|e1d57433c5af24e3227b679367c133dde1014714
-vendor/lib64/libfastcvadsp_stub.so|e25929713605e70417dee54b362b98d04a860f47
-vendor/lib64/libfastcvopt.so|28fa9dc4b44e86a9c1e722e5705adf047dd35d50
-vendor/lib64/libmdsprpc.so|f1f6d837221102f467e43a38b6c083294a6dfe7f
+vendor/lib/libfastcvopt.so|be6d462207dcc238a734d324c479d1022a324c16
+vendor/lib/libmdsprpc.so|42d996c1d7b37f218ade5cd4b5ef0df37f93475f
+vendor/lib64/libadsprpc.so|fe4a7c28a2284ab95c068ad3ffaf256705cf9a02
+vendor/lib64/libadsp_default_listener.so|f7ea94537c66dfa11e1235064d43c8f56c3b3c51
+vendor/lib64/libfastcvadsp_stub.so|ad72fe745a7a8f4b3a355cc0aaf177c29301f29f
+vendor/lib64/libfastcvopt.so|8a5bc4a2f5b2b14c421eac5f7e828146ac0f0119
+vendor/lib64/libmdsprpc.so|1b11f9ee7a61d3b8f599f60a9d749d5829a750e6
 
 # ADSP modules - from op3 PKQ1.181203.001 1904252148
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
-vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
-vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
+vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
+vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 
 # Audio ACDB
 etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
@@ -42,28 +42,28 @@ vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg|ed2a1e071af7ed0ecdbb4f
 vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg|cc78904b69e85281b91c94f474bdd40b5c4d9907
 
 ## Audio - from op3 PKQ1.181203.001 1904252148
-vendor/lib/libacdb-fts.so|100e698279595c86656d5c1fa1773863b4cd05f3
-vendor/lib/libacdbloader.so|b28fa1c9f39bc4f4641307c442a20cf53dd2acb8
-vendor/lib/libacdbrtac.so|25ea2d51f215c1e5e06b298d7c93097e93db7a63
-vendor/lib/libadiertac.so|e5231cdfc829b673702c4661751854bc44f7c72b
-vendor/lib/libadm.so|355bbe01f7117f3e16435224ce0c75b111a0f5b8
-vendor/lib/libaudcal.so|4508cee149c22b8e35e8f4423f38a8e8a9b5d130
-vendor/lib/libaudioalsa.so|5cdcd7d23d26b0576e8832fb8ad451e134ba1bb8
+vendor/lib/libacdb-fts.so|f140cc5c13855f411d9b944316828b42dd6b7d75
+vendor/lib/libacdbloader.so|52fb25441a742d744f6574d1065ae1b822769c48
+vendor/lib/libacdbrtac.so|8a469a26ed1ecff8e22ee141d98bde97513a6212
+vendor/lib/libadiertac.so|e8e2c208abafc6d6c34717aee3d822bfb3a23f76
+vendor/lib/libadm.so|01e2316dfa1afcb000984e9f68903ba6a1220159
+vendor/lib/libaudcal.so|5a6b0fa75e274b07f2dabdcc7381879e1a59898c
+vendor/lib/libaudioalsa.so|920603e464d518c2a46daf1063a65f45f0236d72
 vendor/lib/libdrc.so|7db89c6858c928457a8731d90ba874420972ec9b
-vendor/lib/libqtigef.so|9cd393596185026a68959b75cc7ac3b9342326a5
+vendor/lib/libqtigef.so|fc40d4dbae0389afed79d2fcb481d1a49c63b749
 vendor/lib/libsurround_3mic_proc.so|832adfad9f3d414234f1b4cfd32b196fe4082bb9
-vendor/lib/soundfx/libqcbassboost.so|572d03f4566f3e08aeac948b9ef92817af243a39
-vendor/lib/soundfx/libqcreverb.so|a9ae6d150aae44358783e6b0c4cfb0b3fec27f6b
-vendor/lib/soundfx/libqcvirt.so|4181edde0747774830930f66f20a756fec95118d
-vendor/lib64/libacdb-fts.so|4f11f438d9830e1b6a9022e164e5c21a62a077cf
-vendor/lib64/libacdbloader.so|f7ea51ff749b47bbd18645b6e4358135d2deea65
-vendor/lib64/libacdbrtac.so|1c7f1cb8b4209e382e5c94f60b08e09cb3ad8b6f
-vendor/lib64/libadiertac.so|4e600d84dc23c6dfc9e73e49c6d9591941c95388
-vendor/lib64/libaudcal.so|093eb55abf185b82e534a6b606fb0da1d9c8b1cc
-vendor/lib64/libaudioalsa.so|2e5d0aa1aa495684a88eb3c0d1f4e69e75d554be
-vendor/lib64/libqtigef.so|fa32bd717e47be37ede9fe551270f4f4d9baebaa
-vendor/lib64/soundfx/libqcbassboost.so|fab0dcaedb029e1045ec1d03767fa10ad636307d
-vendor/lib64/soundfx/libqcvirt.so|c02d70d2405d4405d6d246b18fac5d2fde291692
+vendor/lib/soundfx/libqcbassboost.so|0a730813a7335208a5368f48de4790abda536c59
+vendor/lib/soundfx/libqcreverb.so|3cbf222a205e4ccbe812fc69d580abd2237e64d5
+vendor/lib/soundfx/libqcvirt.so|8f60a539fe18de5944d5f1dcd6d0ec5e56b336ea
+vendor/lib64/libacdb-fts.so|1a298a90fe8007fe1a3b352ff7d19ae73734f3cc
+vendor/lib64/libacdbloader.so|2ecf30ba0171aab7fdc720446238d48048cf6b7e
+vendor/lib64/libacdbrtac.so|c44ff9b9aa63e34ca1b77a5f0bfb6a5e50585048
+vendor/lib64/libadiertac.so|aeaf6f057d26acf342609c714213e1c9b3409774
+vendor/lib64/libaudcal.so|96c43cbe0ac304ea128def709d7f3ea99db7f260
+vendor/lib64/libaudioalsa.so|4a27694b5a6842609a2f2572476b7af032ec7201
+vendor/lib64/libqtigef.so|79e811fd04172b0afda1229d182014be28a146b2
+vendor/lib64/soundfx/libqcbassboost.so|0b92d65381d9722c579ccfda12f86c7e3fcaedd1
+vendor/lib64/soundfx/libqcvirt.so|815b3a7cd762cdb6f162dde12c866acb23cdd022
 
 # AptX - from mata-user 9 PPR1.181005.099 413 release-keys
 lib/libaptXHD_encoder.so|974c486e4ca03faa0713553d9dfe2995ac93e01c
@@ -946,40 +946,40 @@ vendor/lib64/hw/sound_trigger.primary.msm8953.so|857963f4e9724dd1bd2d4a4bfe28341
 vendor/lib64/vendor.qti.voiceprint@1.0.so|483d0c78115999e3f85fcb99b3b3b43a6b93c616
 
 # Media - from op3 - PKQ1.181203.001
-vendor/lib/libI420colorconvert.so|6c280c2b27c0d3e482ee3b7b6fa966f6fbb8d9bb
-vendor/lib/libmmosal_proprietary.so|7b4070890dbc94bf59821f88abe617f8f208bd94
-vendor/lib/libOmxAacDec.so|e158dfa4e991d90a9afdb99e5154614ffe63d926
-vendor/lib/libOmxAlacDec.so|5fe4f81e7a38c762b481cc06079b3847527da231
-vendor/lib/libOmxAlacDecSw.so|111e096e79b2b0c5cc48a88643bc3ebbf1975814
-vendor/lib/libOmxAmrDec.so|d252eea3c16e746cbdf80ad7c8f94e20fcc66c32
-vendor/lib/libOmxAmrwbplusDec.so|ffbb0b8ea9cf6557944fb82267ad60606999e7a3
-vendor/lib/libOmxApeDec.so|312f4186f9adcc42fcb0486466bdfe6ddc950990
-vendor/lib/libOmxApeDecSw.so|0f411fda1ac0305f592963cc2a6d801ed0c394ab
-vendor/lib/libOmxEvrcDec.so|088df3c77446f325a535418dd86dc8cae41e69e2
-vendor/lib/libOmxQcelp13Dec.so|5388cb90be81f05cfadd553b6c2ec46243fc58fc
-vendor/lib/libOmxVideoDSMode.so|45bbcc28e169f18bc4a783c304c6f80e223ab7c7
-vendor/lib/libOmxVpp.so|73b7e5d6bd4d4dae37c28dac0f52cfa788ac79f7
-vendor/lib/libOmxWmaDec.so|e5e418df146f9f3c22d060857182557f1197962b
+vendor/lib/libI420colorconvert.so|eed42cd41b14f8921d668eca1a798aae76cfebe1
+vendor/lib/libmmosal_proprietary.so|51d9cbf713f06e07d3f8aa65640f7251e9b3a808
+vendor/lib/libOmxAacDec.so|feacef5e0d1e68a54d9fe6a78ee52f4490696f3d
+vendor/lib/libOmxAlacDec.so|e74385d700fe898b0075cd0742fc7db162564a50
+vendor/lib/libOmxAlacDecSw.so|3b4ef8fd510e91df8c440447c03a8a42bac23752
+vendor/lib/libOmxAmrDec.so|5b399fa755cf9d7722ffd7225fe6f23dfc182185
+vendor/lib/libOmxAmrwbplusDec.so|23cc041078de2ca4a6a44e8eb756b74df0a3b1ca
+vendor/lib/libOmxApeDec.so|2f3cb8de2efb00c93688b86f1b55e96de3752b4b
+vendor/lib/libOmxApeDecSw.so|5a8bbc06b9cf680f1c5012660c82f37331559f77
+vendor/lib/libOmxEvrcDec.so|6a50e069ae8b769c7c97bf0398557112d105b183
+vendor/lib/libOmxQcelp13Dec.so|c094a365bd872d93e553d50fd65dc3d93ef1f486
+vendor/lib/libOmxVideoDSMode.so|e553e97cd36c23549d74231758fa061ea3bbd74b
+vendor/lib/libOmxVpp.so|c942fe466d4fca870e356de2a452dbfd6e303412
+vendor/lib/libOmxWmaDec.so|015c01595f055fe92ba7210cb9a5bec4a38a06ee
 vendor/lib/libgpustats.so|83d8856717923ab389aecf17445e33fc21b90afc
-vendor/lib/libmm-color-convertor.so|01a87ba3433679bde836d6ac8c8f44efcc24bf10
+vendor/lib/libmm-color-convertor.so|37baa4587bbbc8b83ee1b1aa94e8818ccfaaf3a0
 vendor/lib/libvpphvx.so|f9e3229d44ad22e808ee7ed4d8d1c529195ed6a9
-vendor/lib/libvpplibrary.so|316e22a194a84d9eb5732d4e25c159575dac91e3
+vendor/lib/libvpplibrary.so|77d1d8d7fa879d1c5df1fb4e210de1e715bf139e
 vendor/lib/libvqzip.so|0b906db131e99cd5460b8a72d05e86721243de95
-vendor/lib64/libI420colorconvert.so|5ae61396896da9101becdf0dce59ec159c92da31
-vendor/lib64/libOmxAacDec.so|b6a7d2436993d7d95752efa1e1c4c28182680fe4
-vendor/lib64/libOmxAlacDec.so|f8fd648cc702bdad10b294eb7282c330e65f122e
-vendor/lib64/libOmxAlacDecSw.so|be45bc7ef3da435d5dddf7097242ded7baae713c
-vendor/lib64/libOmxAmrDec.so|9dbe6ffa9c0fe38a7cd6c6f9577abcc8750e667c
-vendor/lib64/libOmxAmrwbplusDec.so|793e0509a9f06359316645f1833a46f044e2d83d
-vendor/lib64/libOmxApeDec.so|b0a9aa1fa774e70183481dac0c648252aeda7440
-vendor/lib64/libOmxApeDecSw.so|157163bd9bd3127311edf029a717c7e0d97c1fea
-vendor/lib64/libOmxEvrcDec.so|e14ec750035c45a8d880309fa8109e340f74dad1
-vendor/lib64/libOmxQcelp13Dec.so|fe50f41d5d8bcdd09f22d6a6a453086eb237ee77
-vendor/lib64/libOmxVpp.so|b95c8028374e39af0f71a5502f44b2a41d8db621
-vendor/lib64/libOmxWmaDec.so|3c9284a401b7d060cf3429a8e07392b7698502b5
-vendor/lib64/libgpustats.so|1a091475fb4a744f091bec101a51044fb8854a15
-vendor/lib64/libmm-color-convertor.so|e286810ccbfc31ff237c32c03037da41ebb87da2
-vendor/lib64/libvpplibrary.so|982ff0f95c59b8ff126abd9758b5c13aa89efa0f
+vendor/lib64/libI420colorconvert.so|4982dcf4d7f431a128bff170d868b433e0d69d03
+vendor/lib64/libOmxAacDec.so|35267f31186e3b39c0a1ff535792c1cb0e920d69
+vendor/lib64/libOmxAlacDec.so|f447bc2a6eb61db21523b4c71560b5ecde2cd73d
+vendor/lib64/libOmxAlacDecSw.so|f4fe8d8a2e9b62766fb5edf29afcfb4b4ceeecd2
+vendor/lib64/libOmxAmrDec.so|f86a265fe808b81d542a831d272a43ef8ba3716e
+vendor/lib64/libOmxAmrwbplusDec.so|2e5d0f079382257a4cd6e474bf4e430c1627c3f7
+vendor/lib64/libOmxApeDec.so|e4c11463d1f550d035b86864216f8c94c2578a7f
+vendor/lib64/libOmxApeDecSw.so|16985653f8063d70a3d076c724f780be5b08fe83
+vendor/lib64/libOmxEvrcDec.so|2804ae226bdbfb37f33123c2ef75d8d38496f22d
+vendor/lib64/libOmxQcelp13Dec.so|0e8d0a06a73a46b8d57c3fa1d93f26400f1d03dc
+vendor/lib64/libOmxVpp.so|1c50fa53ebf5946cf9b3fdc68dbf53262b2476b7
+vendor/lib64/libOmxWmaDec.so|0993543bcff3c126548db90344fb1bf1c8f1e8d0
+vendor/lib64/libgpustats.so|35eaab728b21fe7cd33b821bf5cf13ea1117cd90
+vendor/lib64/libmm-color-convertor.so|cae7366bd9ef8e677e55dd67be3ebac78aa151d9
+vendor/lib64/libvpplibrary.so|9801e062790202f7aa640c866415be71177908f7
 
 # Modem - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 vendor/lib/libwms.so|61efcd8bc52e28b7a9b978da0af62355b358887c
@@ -1123,7 +1123,7 @@ vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
 
 # Radio (IMS) - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 -priv-app/ims/ims.apk|10d64cbbd275431b5e346296c66d894685f8ff8e
-lib/com.qualcomm.qti.imscmservice@1.0.so|26309eb7055899ba4ae66d7076e87cda1a84bfb9
+lib/com.qualcomm.qti.imscmservice@1.0.so|b0ce197e2a791fe1c4226b6643cdd18dd149cc68
 lib/com.qualcomm.qti.imscmservice@2.0.so|534cf90cc0109a06aec6999f1a2ab78ad9cfc93f
 lib/com.qualcomm.qti.imscmservice@2.1.so|1df6a299353ac8778acdb7112055f55b0bf69bdf
 lib/lib-imscamera.so|4c345f4fe20078d37570216b67864a63ff5394cd
@@ -1190,7 +1190,7 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|f4eef520bbf98e6e1ac869
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so|559a2dbf409d86746ed4303f2e0089256bb91a07
 
 # Sensors - from Tissot PKQ1.180917.001.V10.0.5.0.PDHMIXM
-vendor/bin/sensors.qti|a2294878cef6ab4a6e51968e88799585c7d456fd
+vendor/bin/sensors.qti|726b3597792d1c714a47549d4d27599672795000
 vendor/lib/hw/activity_recognition.msm8953.so|f9247646a5e2b28473753da06f832ae5f702f7c4
 vendor/lib/libsensor1.so|48727a05c1b91051d5ec53860124f1f1c0d8ca53
 vendor/lib/libsensor_reg.so|8ae3b9d1a54feb9f0af55a8fff50410f53660318
