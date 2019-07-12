@@ -829,7 +829,7 @@ vendor/lib64/libgeofence.so|c7250877898a17f4bfdc244f613dd1e1a9397cb6
 vendor/lib64/libizat_client_api.so|853e4ccd91718edac986f755fc9800603d3a284a
 vendor/lib64/libizat_core.so|6d0ae41cfaaa1c06d32a07e6e808f7de84c51347
 vendor/lib64/liblbs_core.so|ec2049b7cd506df7c88bdaef5de646a335b35f46
--vendor/lib64/libloc_api_v02.so|595f102ee654d4527533d83c9770aa86aef43eac
+vendor/lib64/libloc_api_v02.so|595f102ee654d4527533d83c9770aa86aef43eac
 vendor/lib64/libloc_ds_api.so|1904adf33802842d374bf2ca93da5eaaee5f8dfd
 vendor/lib64/libloc_externalDr.so|94bf3bf90cd96383830cefa532df9ae4dbdc001c
 vendor/lib64/liblocationservice.so|394787e48f4c1bb80475ddd147ab6a4006060078
@@ -852,24 +852,24 @@ vendor/lib/libsdm-disp-apis.so|5c7e946cfa654f533d481970da9b3d2e0c181161
 vendor/lib64/libsdm-disp-apis.so|c6681b458123832bb6f4015fd3e24032d5b2eff8
 vendor/lib/egl/eglSubDriverAndroid.so|2dc3ea90fd0e6c7ad1864a23cf736eedcfa4c985
 vendor/lib/egl/libEGL_adreno.so|adfa25a02996babb29fe6752ef01a25d9482f7d8
-vendor/lib/egl/libGLESv1_CM_adreno.so|0930a64d8889c184de31a085539e1b8b28520a31
+vendor/lib/egl/libGLESv1_CM_adreno.so|32e46deb87f655f66a0cee6fd297d933eeeeb855
 vendor/lib/egl/libGLESv2_adreno.so|a0f957324a8bf97025da7eea9af3b0d08464acfb
 vendor/lib/egl/libQTapGLES.so|7641cd4f894d86f53394bcdc421ecae254afaf30
 vendor/lib/egl/libq3dtools_adreno.so|a2506b94eb0fe3c2bccc7c8e6d8b8d21bd314ae8
 vendor/lib/egl/libq3dtools_esx.so|9116ff1328163d82ca624ea02f09d80ec0f055dc
 vendor/lib/libC2D2.so|a110bf0568eef9e49b251b7750cf6e51c3c85969
-vendor/lib/libCB.so|d9c41b9245b541fa818e63c60e42768306c83bfb
+vendor/lib/libCB.so|984edb0424c4ea8681922f310eca7a993957ee28
 vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
 vendor/lib/libRSDriver_adreno.so|7e6b61cb975de2029ea6debe4fe442852da06e00
 vendor/lib/libadreno_utils.so|9930d4a99e10bdc821e3609695100248d36b3913
 vendor/lib/libbccQTI.so|aa1220cad9df3c39c0c14c4a36546342cc518ad1
 vendor/lib/libc2d30_bltlib.so|e9767a3e4e674d42f23f5482471d38973e038d45
-vendor/lib/libgsl.so|665a6668c528cbf0681e266ddf0e3e78977cafe8
-vendor/lib/libllvm-glnext.so|8ebcbe46aa922596c5b6b7951dae957ec88a8135
-vendor/lib/libllvm-qcom.so|ee5b5f6e78e7e82d277fb8a90b91bb2a3398447e
+vendor/lib/libgsl.so|7a95a4b821298a29017c8f4abc1ba7b9ae067d93
+vendor/lib/libllvm-glnext.so|fb6d4c44e81506d14b0db75d0d81d8339b38604c
+vendor/lib/libllvm-qcom.so|7de288476c8a0eca669ae12602e995fb75079209
 vendor/lib/libmm-hdcpmgr.so|1ece57120c97c2f1168950ca7469460caaa4e954
-vendor/lib/librs_adreno.so|41b2a1b35a8a9966728cea607bf5b7a8f568680d
-vendor/lib/librs_adreno_sha1.so|b846ff1c796978e8158c6ac78c12c631ea9274fe
+vendor/lib/librs_adreno.so|77c1fa369e0434d8456f28b6ddeea07a0012807b
+vendor/lib/librs_adreno_sha1.so|97aae2e687bf72efebd658a5566aacdd069f415f
 vendor/lib64/egl/eglSubDriverAndroid.so|2f3edc8062166bc55cdfbc27fc2e5dc0dd3c5cbc
 vendor/lib64/egl/libEGL_adreno.so|62929bf23ecea823418910defed80bad5fc3416c
 vendor/lib64/egl/libGLESv1_CM_adreno.so|95497830d4e08c02a3b6d82bc7623f926d2ef9ed
@@ -878,18 +878,18 @@ vendor/lib64/egl/libQTapGLES.so|dac820eea4d54f98f7e20a49b82404de6f09743b
 vendor/lib64/egl/libq3dtools_adreno.so|4bd18c19a4d8376311983303b0971a7aa1334897
 vendor/lib64/egl/libq3dtools_esx.so|19d96756fda3f1ba0251c041120d1d4f3a5a8d03
 vendor/lib64/libC2D2.so|724684ac0e167bc729cbdea1ee9e21da248cfd58
-vendor/lib64/libCB.so|447d353120fa1e221fd2b4360d231ba568aecd98
+vendor/lib64/libCB.so|843eb02fa377f9aed16b2d1b9234072c93cf12c7
 vendor/lib64/libOpenCL.so|1e78c9b98378803703835a3e1cbfabf43318f341
 vendor/lib64/libRSDriver_adreno.so|3d77fb21a40b98e908840aa89d044aea4f695694
 vendor/lib64/libadreno_utils.so|c2a2afcee56cad745ad5444c3385fb74c0fb9ff2
 vendor/lib64/libbccQTI.so|be1ae3a075c42dcb19bc6e1ecd7374f9aeae083c
 vendor/lib64/libc2d30_bltlib.so|e950f918802d3d3e656ab4f0fe731bb60e1b357e
 vendor/lib64/libgsl.so|f45d67c2bb1dc10609ae2936256834c225b26334
-vendor/lib64/libllvm-glnext.so|3db54dad4b70e599abbd736ef98759438241b5d8
-vendor/lib64/libllvm-qcom.so|4e9dc8128379692407bf730f1b1ebdd3307bd5c0
+vendor/lib64/libllvm-glnext.so|4dfc9947da910ee987c614e4e83405f9de77850a
+vendor/lib64/libllvm-qcom.so|8f9061f2e356bfa4e87f12f0bdb78663afdb71e9
 vendor/lib64/libmm-hdcpmgr.so|f42daaad4741e87db5f4e11633a0b7a8f8eba687
-vendor/lib64/librs_adreno.so|b6bc2274fc4079818f3124a694348a890c5d7b07
-vendor/lib64/librs_adreno_sha1.so|4ff782e5e2b20ef901f16830ef671e22a82ac030
+vendor/lib64/librs_adreno.so|f8eb584482214ed72694cb848c86d857aece88e1
+vendor/lib64/librs_adreno_sha1.so|e0b612b42f07d072b26ca630518f072e83ddd7b2
 
 # Graphics (HDR) - from AquariusX2 (Zangya) PKQ1.190118.001/657
 vendor/lib/libhdr_tm.so|17705b090e4e8b487a39071b2f46a45324d611a6
@@ -997,8 +997,8 @@ vendor/lib64/libwms.so|57d9f33071f4ae42ac77c98fb82f4e1fe8ac4754
 vendor/bin/msm_irqbalance|3f7a923d9d01dbfda40ebdfdd27a62167df69c13
 
 # Perf from - from wahoo
-vendor/lib/libqti-perfd-client.so|16816cfdc873a2fdc9467db52bd5f2aaa33d2b50
-vendor/lib64/libqti-perfd-client.so|93c3f90f1b72a21ca325cbb375923b1deba80467
+vendor/lib/libqti-perfd-client.so|08c3c3d419f4171ddf3b5809ec89ff8311c0af98
+vendor/lib64/libqti-perfd-client.so|3a2899e8aaa6cc1d853487da3859083d2a7f3801
 
 # Peripheral manager - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
@@ -1219,8 +1219,7 @@ vendor/lib64/libthermalioctl.so|6eed5b8ca6989809eac27abd4af19bbd6f3845ee
 # Time services - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
 vendor/bin/time_daemon|bc58af8ed0cc94708aa75372565f4251991ab123
--vendor/lib/libtime_genoff.so|88a80bd92d268d533292d46da22eb96498e40292
--vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
+vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
 
 # TUI - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 lib/vendor.qti.hardware.tui_comm@1.0.so|03a2143899def287dd48b2290f769b4eebdd61d0
