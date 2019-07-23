@@ -1281,16 +1281,3 @@ vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libwfdhdcpcp.so
-
-# WiFi+Bt fix
-vendor/bin/hw/android.hardware.bluetooth@1.0-service
-vendor/bin/hw/android.hardware.wifi@1.0-service
-vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/wpa_supplicant.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib64/libwifi-hal.so
