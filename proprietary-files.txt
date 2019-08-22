@@ -987,7 +987,7 @@ vendor/lib/libwms.so|61efcd8bc52e28b7a9b978da0af62355b358887c
 vendor/lib64/libwms.so|57d9f33071f4ae42ac77c98fb82f4e1fe8ac4754
 
 # msm_irqbalance - from sailfish PQ2A.190205.003
-vendor/bin/msm_irqbalance|77ef07d24e1d42c8539271477dc65b087956a1c1
+vendor/bin/msm_irqbalance|7ce3f35f7e0f12af1e2d36aa095d56a5ec88c51e
 
 # Perf from - from wahoo
 vendor/lib/libqti-perfd-client.so|16816cfdc873a2fdc9467db52bd5f2aaa33d2b50
