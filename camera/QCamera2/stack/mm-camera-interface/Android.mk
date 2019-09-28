@@ -43,6 +43,7 @@ LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common \
     system/media/camera/include \
+    hardware/qcom/media-caf/msm8996/mm-core/inc \
 
 LOCAL_CFLAGS += -DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID
 
