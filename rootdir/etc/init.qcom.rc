@@ -34,16 +34,24 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
+on init
+    # Loading kernel modules in background
+    start insmod_sh
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
+on late-fs
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-2
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 on early-boot
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
-    # Allow subsystem (modem etc) debugging
-    write /sys/kernel/debug/bootkpi/kpi_values "M - Start adsp"
-    write /sys/kernel/boot_adsp/boot 1
-    write /sys/kernel/boot_slpi/boot 1
+    # Wait for devices
+    wait_for_prop vendor.all.devices.ready 1
 
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
@@ -341,6 +349,13 @@ service qcom-sh /vendor/bin/init.qcom.sh
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
+
+service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.cfg
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
