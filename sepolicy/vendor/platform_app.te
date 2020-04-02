@@ -1,3 +1,6 @@
 allow platform_app system_app_data_file:dir getattr;
 
 allow platform_app cgroup:file { write };
+
+# FPS
+allow platform_app sysfs_fps:file { getattr open read };
