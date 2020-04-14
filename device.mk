@@ -413,3 +413,7 @@ PRODUCT_COPY_FILES += \
 # OTA
 PRODUCT_PACKAGES += \
     Updater
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
