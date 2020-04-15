@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_mido.mk
+    $(LOCAL_DIR)/syberia_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_mido-user \
-    lineage_mido-userdebug \
-    lineage_mido-eng
+    syberia_mido-user \
+    syberia_mido-userdebug \
+    syberia_mido-eng
