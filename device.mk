@@ -400,3 +400,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# World APN list
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
