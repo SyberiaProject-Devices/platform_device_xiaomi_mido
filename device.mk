@@ -281,6 +281,7 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
@@ -404,3 +405,7 @@ PRODUCT_BOOT_JARS += \
 # World APN list
 PRODUCT_COPY_FILES += \
     device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# OTA
+PRODUCT_PACKAGES += \
+    Updates
