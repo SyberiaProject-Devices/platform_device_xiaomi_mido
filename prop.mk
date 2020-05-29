@@ -222,3 +222,10 @@ wifi.interface=wlan0
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.wfd.virtual=0
+
+# QTI Bluetooth
+ro.bluetooth.library_name=libbluetooth_qti.so
+vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.btstack.enable.twsplus=true
