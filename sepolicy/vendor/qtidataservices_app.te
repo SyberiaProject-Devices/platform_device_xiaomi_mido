@@ -1,0 +1,1 @@
+allow qtidataservices_app cgroup:file { write };

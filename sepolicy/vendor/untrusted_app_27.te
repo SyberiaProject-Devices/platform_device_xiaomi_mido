@@ -1,0 +1,2 @@
+allow untrusted_app_27 proc_vmstat:file { getattr  open };
+allow untrusted_app_27 cgroup:file { write };

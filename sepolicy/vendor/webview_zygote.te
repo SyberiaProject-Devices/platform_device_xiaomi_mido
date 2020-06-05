@@ -1,0 +1,4 @@
+allow webview_zygote cgroup:file { getattr };
+allow webview_zygote tombstoned:unix_stream_socket { connectto };
+allow webview_zygote tombstoned_crash_socket:sock_file { write };
+allow webview_zygote zygote_exec:file { getattr  open  read };
