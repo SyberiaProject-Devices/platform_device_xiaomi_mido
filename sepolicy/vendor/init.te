@@ -9,3 +9,4 @@ allow init sysfs_leds:lnk_file read;
 
 allow init sysfs:file setattr;
 
+allow init hal_perf_default:binder { call };

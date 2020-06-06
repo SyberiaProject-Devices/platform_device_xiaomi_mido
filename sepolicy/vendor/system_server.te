@@ -5,3 +5,5 @@ allow system_server proc_touchpanel:lnk_file read;
 
 # vibrator
 allow system_server sysfs_vibrator:file read;
+
+allow system_server init:binder { call };
