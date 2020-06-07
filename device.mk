@@ -24,10 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
@@ -394,8 +390,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 # AdvancedControls
-PRODUCT_PACKAGES += \
-    AdvancedControls \
+#PRODUCT_PACKAGES += \
+ #   AdvancedControls \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
