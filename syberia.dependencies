@@ -1,6 +1,25 @@
 [
  {
-   "repository": "android_kernel_xiaomi_mido",
+   "repository": "KudProject/kernel_xiaomi_msm8953-4.9",
    "target_path": "kernel/xiaomi/mido"
- }
-]
+ },
+ {
+   "repository" : "hnaamdev41/display-caf.git",
+   "target_path": "hardware/qcom/display-caf/msm8996",
+   "branch"     : "ten"
+ },
+  {
+   "repository" : "hnaamdev41/audio-caf.git ",
+   "target_path": "hardware/qcom/audio-caf/msm8996",
+   "branch"     : "ten"
+ },
+  {
+   "repository" : "hnaamdev41/media-caf",
+   "target_path": "hardware/qcom/media-caf/msm8996",
+   "branch"     : "ten"
+ },
+ {
+   "repository" : "hnaamdev41/Vendor_Xiaomi_mido",
+   "target_path": "vendor/xiaomi",
+   "branch"     : "ten"
+ },
